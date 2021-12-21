@@ -56,7 +56,7 @@ p {
   color: var(--Grayish-Blue);
 }
 
-ul {
+.main-container {
   max-width: 69.375rem; /*1110px*/
   margin: 0 auto;
   list-style: none;
@@ -79,7 +79,7 @@ ul {
   border-radius: .5rem;
 }
 
-ul div {
+.middle-column {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
@@ -137,6 +137,14 @@ li img {
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 75rem) {
+
+  .main-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (max-width: 64rem) {
 
   header {
@@ -150,7 +158,7 @@ li img {
     font-size: 2rem;
   }
 
-  ul {
+  .main-container {
     flex-direction: column;
   }
 }
@@ -175,14 +183,13 @@ li img {
     margin-bottom: 2.0625rem;
   }
   
-  ul {
+  .main-container {
     padding: 0 2rem;
     gap: 1.5625rem;
     margin-bottom: 4.875rem;
-
   }
 
-  ul div {
+  .middle-column {
     gap: 1.5rem;
   }
 
