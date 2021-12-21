@@ -35,47 +35,60 @@ body {
 
 header {
   text-align: center;
+  margin-top: 5rem; /*80px;*/
+  margin-bottom: 4rem /*64px*/;
+  padding: 0 30% ;
 }
 
-/* Desktop Card Style start */
+h1 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 200;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  font-weight: 900;
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
 
 ul {
-  max-width: 69.375rem;
-  /* width: 800px; */
-  margin: 2rem auto;
-  /* background-color: wheat; */
-  border: 1px solid red ;
+  max-width: 69.375rem; /*1110px*/
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 1.875rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  max-width: 21.875rem;
+  padding: 2rem;
+  padding-top: 1.9375rem;
+  border-radius: .5rem;
 }
 
 ul div {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
-}
-
-li {
-  position: relative;
-  overflow: hidden;
-  /* background-color: yellowgreen; */
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  /* height: 200px; */
-  
-  max-width: 23.125rem;
-  /* width: 300px; */
-  /* max-width: 33.33%; */
-  padding: 2rem;
-  border-radius: 8px;
+  max-width: 21.875rem;
 }
 
  li span {
   display: block;
-  height: 4px;
+  height: .25rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -84,13 +97,20 @@ li {
 
 li h2 {
   color: var(--Very-Dark-Blue);
+  font-size: 1.25rem;
+  margin-bottom: 0.5625rem;
 }
 
-li p {
+.card p {
   color: var(--Grayish-Blue);
-  font-size: 14px;
+  font-size: 0.8125rem;
   font-weight: var(--fw400);
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+li img {
+  float: right;
 }
 
 .cyan-card span:first-of-type {
@@ -109,33 +129,75 @@ li p {
   background-color: var(--Blue);
 }
 
-/* .cyan-card {
- border-top: 0.25rem solid var(--Cyan);
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-.red-card {
-  border-top: 0.25rem solid var(--Red);
+@media (max-width: 64rem) {
+
+  header {
+    padding: 5%;
+  }
 }
 
-.blue-card {
-  border-top: 0.25rem solid var(--Blue);
+@media (max-width: 48rem) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ul {
+    flex-direction: column;
+  }
 }
 
-.orange-card {
-  border-top: 0.25rem solid var(--Orange);
-} */
+@media (max-width: 23.4375rem) {
 
+  header {
+    text-align: center;
+    margin-bottom: 4.875rem;
+    padding: 0 2rem;
+  }
 
-/* Desktop Card Style End */
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
 
+  li p {  
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 2.0625rem;
+  }
+  
+  ul {
+    padding: 0 2rem;
+    gap: 1.5625rem;
+    margin-bottom: 4.875rem;
 
-ul div {
-  /* display: flex; */
+  }
+
+  ul div {
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding-top: 1.625rem 1.75rem 1.75rem;
+  }
+
+  .card img {
+    height: 3.5625rem;
+  }
+
+  li h2 {
+    margin-bottom: .25rem;
+  }
 }
 
 
 
-.vertical {
-  background-color: royalblue;
- 
-}
