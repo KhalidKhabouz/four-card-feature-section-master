@@ -33,11 +33,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
+.main-header {
   text-align: center;
   margin-top: 5rem; /*80px;*/
   margin-bottom: 4rem /*64px*/;
-  padding: 0 30% ;
+  /* padding: 0 30% ; */
 }
 
 h1 {
@@ -45,7 +45,8 @@ h1 {
   font-weight: 200;
   font-size: 2.25rem;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
+  width: 50%;
 }
 
 h1 span {
@@ -149,12 +150,20 @@ li img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  h1 {
+    /* width: 50% */
+  }
 }
 
 @media (max-width: 64rem) {
 
-  header {
+  .main-header {
     padding: 5%;
+  }
+
+  h1 {
+    width: 100%;
   }
 }
 
@@ -171,13 +180,19 @@ li img {
 
 @media (max-width: 23.4375rem) {
 
-  header {
+  .test {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    background-color: seagreen;
+
+  }
+  .main-header {
     text-align: center;
     margin-bottom: 4.875rem;
     padding: 0 2rem;
   }
 
-  header p {
+  .main-header p {
   }
 
   h1 {
@@ -214,6 +229,5 @@ li img {
     margin-bottom: .25rem;
   }
 }
-
 
 
