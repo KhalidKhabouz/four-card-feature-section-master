@@ -37,7 +37,8 @@ body {
   text-align: center;
   margin-top: 5rem; /*80px;*/
   margin-bottom: 4rem /*64px*/;
-  /* padding: 0 30% ; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.4;
   margin: 0 auto 1rem auto;
-  width: 50%;
+  max-width: 44%;
 }
 
 h1 span {
@@ -87,13 +88,7 @@ p {
   max-width: 21.875rem;
 }
 
-/* .middle-column ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1.875rem;
-} */
-
- li span {
+li span {
   display: block;
   height: .25rem;
   position: absolute;
@@ -144,33 +139,26 @@ li img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 75rem) {
+@media (max-width: 75rem) { /* 1200px */
 
   .main-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+@media (max-width: 64rem) { /* 1024px */
 
   h1 {
-    /* width: 50% */
+    max-width: 60%;
   }
 }
 
-@media (max-width: 64rem) {
-
-  .main-header {
-    padding: 5%;
-  }
-
-  h1 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 48rem) {
+@media (max-width: 48rem) { /* 768px */
 
   h1 {
     font-size: 2rem;
+    max-width: 70%;
   }
 
   .main-container {
@@ -178,7 +166,21 @@ li img {
   }
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 36.25rem) { /* 580px */
+  h1 {
+    font-size: 1.75rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 30rem) { /* 480px */ 
+
+  h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 23.4375rem) { /* 375px */
 
   .test {
     grid-template-columns: 1fr;
@@ -192,13 +194,11 @@ li img {
     padding: 0 2rem;
   }
 
-  .main-header p {
-  }
-
   h1 {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+    max-width: 100%;
   }
 
   li p {  
